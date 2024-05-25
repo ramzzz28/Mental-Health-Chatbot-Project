@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Quiz</title>
+    <link rel="stylesheet" type="text/css" href="mood.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mood Quiz</h1>
+        <form id="moodQuiz">
+            <div class="question">
+                <p>How do you feel today?</p>
+                <label><input type="radio" name="question1" value="5"> Very Happy</label>
+                <label><input type="radio" name="question1" value="3"> Happy</label>
+                <label><input type="radio" name="question1" value="1"> Neutral</label>
+                <label><input type="radio" name="question1" value="-1"> Sad</label>
+                <label><input type="radio" name="question1" value="-3"> Very Sad</label>
+            </div>
+            <div class="question">
+                <p>How well did you sleep last night?</p>
+                <label><input type="radio" name="question2" value="5"> Very well</label>
+                <label><input type="radio" name="question2" value="3"> Well</label>
+                <label><input type="radio" name="question2" value="1"> Fairly</label>
+                <label><input type="radio" name="question2" value="-1"> Poorly</label>
+                <label><input type="radio" name="question2" value="-3"> Very poorly</label>
+            </div>     
+            <div class="question">
+                <p>How would you rate your stress level today?</p>
+                <label><input type="radio" name="question3" value="5"> Very Happy</label>
+                <label><input type="radio" name="question3" value="3"> Happy</label>
+                <label><input type="radio" name="question3" value="1"> Neutral</label>
+                <label><input type="radio" name="question3" value="-1"> Sad</label>
+                <label><input type="radio" name="question3" value="-3"> Very Sad</label>
+            </div>
+            <div class="question">
+                <p>How physically active were you today?</p>
+                <label><input type="radio" name="question4" value="5"> Very Happy</label>
+                <label><input type="radio" name="question4" value="3"> Happy</label>
+                <label><input type="radio" name="question4" value="1"> Neutral</label>
+                <label><input type="radio" name="question4" value="-1"> Sad</label>
+                <label><input type="radio" name="question4" value="-3"> Very Sad</label>
+            </div>
+            <div class="question">
+                <p>How would you rate your anxiety level today?</p>
+                <label><input type="radio" name="question5" value="5"> Very Low</label>
+                <label><input type="radio" name="question5" value="3"> Low</label>
+                <label><input type="radio" name="question5" value="1"> Moderate</label>
+                <label><input type="radio" name="question5" value="-1"> High</label>
+                <label><input type="radio" name="question5" value="-3"> Very High</label>
+            </div>
+            <div class="question">
+                <p>How productive did you feel today?</p>
+                <label><input type="radio" name="question6" value="5"> Very Happy</label>
+                <label><input type="radio" name="question6" value="3"> Happy</label>
+                <label><input type="radio" name="question6" value="1"> Neutral</label>
+                <label><input type="radio" name="question6" value="-1"> Sad</label>
+                <label><input type="radio" name="question6" value="-3"> Very Sad</label>
+            </div>
+            <div class="question">
+                <p>How healthy was your diet today?</p>
+                <label><input type="radio" name="question7" value="5"> Very healthy</label>
+                <label><input type="radio" name="question7" value="3"> Healthy</label>
+                <label><input type="radio" name="question7" value="1"> Neutral</label>
+                <label><input type="radio" name="question7" value="-1"> Unhealthy</label>
+                <label><input type="radio" name="question7" value="-3"> Very unhealthy</label>
+            </div>       
+            <!-- Add more questions as needed -->
+            <button type="submit" class="btn-submit">Submit</button>
+            <div id="result" style="display: none;">
+                <h2>Your Score:</h2>
+                <p id="score"></p>
+                <h2>Your Mood:</h2>
+                <p id="mood"></p>
+            </div>
+        </form>
+        <a href="/about.html">
+            <button type="button" class="btn-cancel">X</button>
+        </a>
+    </div>
+    <script src="mood.js"></script>
+</body>
+</html>

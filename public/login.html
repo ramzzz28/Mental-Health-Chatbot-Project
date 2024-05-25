@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="NOVA.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <title>Auracle</title>
+</head>
+<body>
+     <div class="wrapper">
+        <!-- <span class="icon-close"><i class="fa-solid fa-xmark"></i></span> -->
+        <div class="form-box login">
+            <h2>Login</h2>
+                <form method="POST" action="/login">
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                    <input type="text" name="name" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                    <input type="password" name="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="login-register">
+                    <a href="/forgot-password.html">Forgot Password</a>
+                </div>
+                <input type="submit" class="btn"></input>
+                <div class="login-register">
+                    <p>Don't have an account?<a href="/signup.html">Sign Up</a></p>
+                </div>
+            </form>
+            <a href="/index.html">
+                <button type="button" class="btn-cancel-login">X</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

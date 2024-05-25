@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="NOVA.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <title>Auracle</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="form-box login">
+            <h2>Here is your password.</h2>
+            <div class="form-box password">
+            <p><strong id="temporaryPassword"></strong></p>
+
+            <script>
+                // Retrieve the temporary password from the query parameters
+                 const urlParams = new URLSearchParams(window.location.search);
+                const temporaryPassword = urlParams.get('password');
+
+                // Display the temporary password on the page
+                 document.getElementById('temporaryPassword').textContent = temporaryPassword;
+             </script>
+             </div>
+                <form method="POST" action="/login">
+                    <a href="/login.html">
+                        <button type="button" class="btn-cancel-send">Back to Login</button>
+                    </a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
